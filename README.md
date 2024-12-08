@@ -28,7 +28,7 @@ Run the following command:
 - Pull the latest Nginx Docker image.
 - Deploy an Nginx container on port 8090 (default).
 - Add a Firewall rule to allow traffic on port 8090.
-- Step 3: Access the Nginx Server
+# Step 3: Access the Nginx Server
 - After successful execution of the script, you can access the Nginx server:
 
 **Local Access**: Open a browser and visit:  
