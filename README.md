@@ -7,5 +7,11 @@ This repository contains a PowerShell script designed to automate the setup of a
 - Nginx Deployment: Deploys the Nginx container on a user-specified port (default: 8090).
 - Firewall Configuration: Configures Windows Firewall to allow inbound traffic on the specified port.
 - Customizability: Supports changing the default port or serving custom HTML files via Nginx.
+ # Prerequisites
+Ensure the following before running the script:
+- Windows OS (Windows 10/11 recommended).
+- PowerShell 5.1 or later.
+- Administrator privileges to execute the script.
+- Active Internet Connection to download Docker Desktop and Nginx.
 
 
