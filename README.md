@@ -16,7 +16,7 @@ Ensure the following before running the script:
 # Setup Instructions
 # Step 1: Clone the Repository
 Open PowerShell and run the following commands to clone the repository and navigate to the project folder:  
-git clone 
+git clone https://github.com/Gagankashyap876287/Automated-Infrastructure-Setup-Script.git
 cd infrastructure-setup
 Step 2: Run the Script
 Open PowerShell as Administrator.
