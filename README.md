@@ -51,7 +51,7 @@ http://<your-ip-address>:8090
 $Port = 8081  # New port number
 # Firewall Issues
 - Check if the firewall rule is active using the following command:
-- 
+  
 Get-NetFirewallRule | Where-Object DisplayName -eq "Allow Port 8090"
 - If the rule is missing, add it manually:
   
