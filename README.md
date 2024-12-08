@@ -47,14 +47,13 @@ http://<your-ip-address>:8090
 - Restart Docker: If Docker fails to start after installation, manually restart Docker Desktop.
 # Port Conflicts
 - If port 8090 is in use, modify the script to use a different port by changing the $Port variable:
-- 
+
 $Port = 8081  # New port number
 # Firewall Issues
 - Check if the firewall rule is active using the following command:
-- 
+
 Get-NetFirewallRule | Where-Object DisplayName -eq "Allow Port 8090"
 - If the rule is missing, add it manually:
-- 
 New-NetFirewallRule -DisplayName "Allow Port 8090" -Direction Inbound -LocalPort 8090 -P
 
 
