@@ -36,9 +36,26 @@ Run the following command:
 http://localhost:8090  
 
 **Remote Access**: Use the server's IP address to access the Nginx server:
-
-bash
-Copy code
 http://<your-ip-address>:8090
+# File Structure
+- setup_infrastructure.ps1: The main PowerShell script that automates the infrastructure setup.
+- README.md: Documentation providing detailed instructions on how to use the script.
+# Troubleshooting
+**Docker Desktop Issues**  
+
+- Docker is not starting: Ensure Docker Desktop is properly installed and running. The script attempts to start Docker if it's not running.
+- Restart Docker: If Docker fails to start after installation, manually restart Docker Desktop.
+# Port Conflicts
+- If port 8090 is in use, modify the script to use a different port by changing the $Port variable:
+- 
+$Port = 8081  # New port number
+# Firewall Issues
+- Check if the firewall rule is active using the following command:
+- 
+Get-NetFirewallRule | Where-Object DisplayName -eq "Allow Port 8090"
+- If the rule is missing, add it manually:
+- 
+New-NetFirewallRule -DisplayName "Allow Port 8090" -Direction Inbound -LocalPort 8090 -P
+
 
 
